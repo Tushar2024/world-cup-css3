@@ -271,6 +271,7 @@ main {
 
 /*---------------- ------------
          mobile view responsive
+         ((device-- iPhone-12 Pro))
 ---------------------------------*/
 
 @media only screen and (max-width:688px) {
@@ -319,6 +320,7 @@ main {
 /*---------------- ------------
    ****************
         tablet view responsive 
+        ((devic--- ipad Air))
         ****************************
 ---------------------------------*/
 
