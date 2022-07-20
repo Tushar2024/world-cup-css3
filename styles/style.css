@@ -4,12 +4,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 
-/* --------------------
+/* -----------------------
      heading design 
------------------- */
+---------------------- */
 
 .container {
     color: #FFFFFF;
@@ -19,6 +20,7 @@ body {
     border-radius: 30px;
     display: flex;
     align-items: center;
+    margin: 25px;
 }
 
 .heading-part {
@@ -57,15 +59,21 @@ body {
 
 main {
     margin-top: 150px;
+    display: flex;
+    margin-bottom: 130px;
+    margin-left: 20px;
 }
 
 
-/* ---------- left part ----------------*/
+/* ---------- -------------------
+    left part or navbar design 
+--------------------------------*/
 
 .left-section {
     width: 312px;
     height: 312px;
     background-color: #161616;
+    border-radius: 10px;
     padding: 30px;
 }
 
@@ -98,4 +106,139 @@ main {
 }
 
 
-/*---------------- right part -------------- */
+/*---------------- -----------
+       right part-01 or upcoming match
+               part design
+-------------------------------- */
+
+.upcoming-matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.matchs {
+    width: 230px;
+    height: 180px;
+    text-align: center;
+    padding: 53px 30px;
+    margin-left: 10px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.flags {
+    display: flex;
+}
+
+.flags img {
+    width: 60%;
+}
+
+.flags h5 {
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blog-heading {
+    font-size: 20px;
+    font-weight: 600;
+    /* text-align: center; */
+}
+
+
+/*---------------- -----------
+       right part-02  or blog part design
+-------------------------------- */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.blog {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog .transfer-button {
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.blog .transfer-button a {
+    color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.font-padding {
+    padding-left: 20px;
+}
+
+.awesome-spacing {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.fa-clock,
+.fa-comment-dots {
+    margin-right: 10px;
+}
+
+
+/* <!-------------------------------
+         footer part design 
+------------------------------ --> */
+
+.footer {
+    width: 1085px;
+    height: 150px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: black;
+    padding: 130px;
+}
+
+.footer-header {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.fa-brands {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+}
