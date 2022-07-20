@@ -33,6 +33,17 @@ body {
     font-weight: 700;
 }
 
+
+/* ------------ simple css3 animation --------------- */
+
+.side-photo:hover img {
+    transform: scale(.75) rotate(-35deg);
+    transition: transform 2s ease-in-out;
+}
+
+
+/*----- end css3 animation ------ */
+
 .link {
     color: white;
     font-size: 20px;
@@ -54,7 +65,9 @@ body {
 
 
 /* --------------------
+   **************************
        main part design 
+       *************************
 ---------------------- */
 
 main {
@@ -107,8 +120,10 @@ main {
 
 
 /*---------------- -----------
+
        right part-01 or upcoming match
                part design
+               
 -------------------------------- */
 
 .upcoming-matches {
@@ -146,12 +161,13 @@ main {
 .blog-heading {
     font-size: 20px;
     font-weight: 600;
-    /* text-align: center; */
 }
 
 
 /*---------------- -----------
+     **************************************
        right part-02  or blog part design
+         ************************************
 -------------------------------- */
 
 .blogs {
@@ -208,7 +224,9 @@ main {
 
 
 /* <!-------------------------------
+  **********************
          footer part design 
+         *************************
 ------------------------------ --> */
 
 .footer {
@@ -244,17 +262,19 @@ main {
 }
 
 
-/* -------------------------------- 
-         responsive design part start 
------------------------------------------- */
+/*---------------- ------------
+      ********************
+         responsive design part
+         ************************** 
+---------------------------------*/
 
 
 /*---------------- ------------
-        mobile view responsive 
+         mobile view responsive
 ---------------------------------*/
 
 @media only screen and (max-width:688px) {
-    /* header responsive */
+    /* ----------- header responsive ------------ */
     .container,
     .heading-part {
         width: 90%;
@@ -278,6 +298,9 @@ main {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 50px;
     }
+    .view-all-button {
+        display: none;
+    }
     /* ----------- footer part responsive --------------- */
     .footer {
         width: 32%;
@@ -294,19 +317,20 @@ main {
 
 
 /*---------------- ------------
+   ****************
         tablet view responsive 
+        ****************************
 ---------------------------------*/
 
 @media only screen and (min-width:689px) and (max-width:992px) {
+    /* ----------- header responsive ------------ */
     .container,
     .heading-part {
         width: 160%;
         height: auto;
-        /* flex-direction: column; */
         margin: 0;
         padding-right: 50px;
         border-radius: 10px;
-        /* text-align: left; */
     }
     .container .side-photo img {
         width: 100%;
@@ -314,32 +338,90 @@ main {
     }
     /*---------- main part responsive -----------*/
     main {
-        width: 150%;
-        /* height: auto; */
+        width: 160%;
         flex-direction: column;
         align-items: center;
     }
+    /*---------- navigation part -------------- */
     .left-section {
         display: flex;
         flex-direction: row;
-        /* grid-template-columns: repeat(3, 1fr); */
+        width: 80%;
+        height: 312px;
+        background-color: #161616;
+        border-radius: 10px;
+        padding: 30px;
+        gap: 10px;
     }
+    .nav-bar {
+        width: 30%;
+        padding: 40px 10px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+        margin: 100px 0;
+    }
+    .special-navbar {
+        width: 30%;
+        text-align: center;
+        background-color: #DD0000;
+        padding: 40px 10px;
+        border-radius: 10px;
+        margin: 100px 0;
+    }
+    /* ------------------ blog parts ---------------------- */
     .blogs {
-        /* width: 100%; */
         grid-template-columns: repeat(2, 1fr);
         margin-top: 50px;
-        /* text-align: center; */
-        /* justify-content: center; */
         align-items: center;
+    }
+    .blog {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        border: 3px solid white;
+        box-shadow: 5px 5px 10px gray;
+    }
+    .view-all-button {
+        width: 100%;
+        text-align: center;
+        background-color: #DD0000;
+        padding: 10px 40px;
+        border-radius: 10px;
+        margin: 20px 100px;
+    }
+    .view-all-button a {
+        color: #FFFFFF;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    /* ---------------- footer part ------------------ */
+    .footer {
+        width: 130%;
+        height: auto;
+    }
+    .footer-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .social-media {
+        padding-bottom: 50px;
+    }
+    .fa-brands {
+        margin-right: 30px;
+        margin-left: 30px;
     }
 }
 
 
-/* .side-photo:hover img {
-    transform: scale(1.3) rotate(-35deg);
-    transition: transform 2s ease-in-out;
-}
+/*------------------- 
+       large devices responsive
+ -------------------- */
 
-.side-photo {
-    overflow: hidden;
-} */
+@media screen and (min-width:993px) {
+    .blogs .view-all-button {
+        display: none;
+    }
+}
