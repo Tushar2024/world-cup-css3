@@ -1,0 +1,101 @@
+/* ----------------
+     Utility design 
+---------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* --------------------
+     heading design 
+------------------ */
+
+.container {
+    color: #FFFFFF;
+    background-color: #161616;
+    width: 1321px;
+    height: 646px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.heading-part {
+    width: 70%;
+    padding: 30px 20px 80px 80px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.link {
+    color: white;
+    font-size: 20px;
+    background-color: tomato;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.side-photo {
+    width: 80%;
+    margin: 35px 33px 0px 24px;
+}
+
+.side-photo img {
+    width: 581px;
+    height: 613px;
+}
+
+
+/* --------------------
+       main part design 
+---------------------- */
+
+main {
+    margin-top: 150px;
+}
+
+
+/* ---------- left part ----------------*/
+
+.left-section {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    padding: 30px;
+}
+
+.nav-bar {
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    margin: 50px 0;
+}
+
+.nav-bar a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.special-navbar {
+    text-align: center;
+    background-color: #DD0000;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.special-navbar a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/*---------------- right part -------------- */
